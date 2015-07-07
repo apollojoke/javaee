@@ -4,7 +4,7 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.*;
 
-import com.tw.core.Service;
+import com.tw.core.service.Service;
 
 public class HelloServlet extends HttpServlet {
     public void doGet (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
