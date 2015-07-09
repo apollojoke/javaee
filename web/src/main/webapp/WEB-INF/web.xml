@@ -13,13 +13,51 @@
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
 
+    <!--list all person-->
     <servlet>
-        <servlet-name>PersonServlet</servlet-name>
-        <servlet-class>com.tw.web.PersonServlet</servlet-class>
+        <servlet-name>ShowPersonServlet</servlet-name>
+        <servlet-class>com.tw.web.ShowPersonServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>PersonServlet</servlet-name>
+        <servlet-name>ShowPersonServlet</servlet-name>
         <url-pattern>/show</url-pattern>
     </servlet-mapping>
+
+    <!--create person-->
+    <servlet>
+        <servlet-name>CreatePersonServlet</servlet-name>
+        <servlet-class>com.tw.web.CreatePersonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreatePersonServlet</servlet-name>
+        <url-pattern>/createPerson</url-pattern>
+    </servlet-mapping>
+
+    <!--delete person-->
+    <servlet>
+        <servlet-name>DeletePersonServlet</servlet-name>
+        <servlet-class>com.tw.web.DeletePersonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeletePersonServlet</servlet-name>
+        <url-pattern>/deletePerson</url-pattern>
+    </servlet-mapping>
+
+    <!--update person-->
+    <servlet>
+        <servlet-name>UpdatePersonServlet</servlet-name>
+        <servlet-class>com.tw.web.UpdatePersonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdatePersonServlet</servlet-name>
+        <url-pattern>/updatePerson</url-pattern>
+    </servlet-mapping>
+
+
+
+
 </web-app>
